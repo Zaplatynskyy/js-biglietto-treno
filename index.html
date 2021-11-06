@@ -5,23 +5,139 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biglietto Treno</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    <h1>Biglietto del treno</h1>
+<body class="debug">
+    <header>
+        <div class="container-fluid border-bottom border-dark">
+            <div class="row">
+                <div class="col-12 py-2 px-5">
+                    <h1>Pagamento</h1>
+                </div>
+            </div>
+        </div>
+    </header>
 
-    <section>
-        <h2>Chilometri da percorrere</h2>
-        <div id="chilometri"></div>
+    <main>
+        <div class="container">
+            <div class="row gy-2">
+                <div class="col-12 col-md-3">
+                    <ul>
+                        <li id="direction" class="py-4">
+                            <i class="fas fa-arrow-right"></i>
+                            Andata
+                        </li>
+                        <li class="text_grey">Data partenza</li>
+                        <li class="fw-bold">
+                            <span class="d-block">Lunedi</span>
+                            <span class="d-block">5 Dicembre 2016</span>
+                        </li>
+                        <li class="text_grey">Orario partenza / arrivo</li>
+                        <li class="fw-bold">08.15 > 11.13</li>
+                    </ul>
+                </div>
 
-        <h2>Età del passeggero</h2>
-        <div id="eta"></div>
+                <div class="col-12 col-md-6">
+                    <div class="row">
+                        <div class="col-12">
+                            <ul>
+                                <li class="text_grey">Itinerario</li>
+                                <li class="fw-bold fw_14">Milano Centrale - Roma Termini</li>
+                            </ul>
+                        </div>
+                    </div>
 
-        <h2>Costo totale del biglietto</h2>
-        <div id="prezzo_biglietto"></div>
-        <div id="nota"></div>
-    </section>
+                    <div class="row">
+                        <div class="col-4 col-sm-3 col-md-4">
+                            <ul>
+                                <li class="text_grey">Ambiente</li>
+                                <li class="fw-bold fw_14">Low Cost</li>
+                            </ul>
+                        </div>
 
+                        <div class="col-4 col-sm-3 col-md-4">
+                            <ul>
+                                <li class="text_grey">Tipo Offerta</li>
+                                <li class="fw-bold fw_14">Low Cost</li>
+                            </ul>
+                        </div>
+
+                        <div class="col-4 col-sm-3 col-md-4">
+                            <ul>
+                                <li class="text_grey">Passeggeri</li>
+                                <li class="fw-bold fw_14">1 Adulto</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-6 col-sm-5">
+                            <ul>
+                                <li class="text_grey">Dettaglio passeggeri</li>
+                                <li class="fw-bold fw_14">Mario Rossi</li>
+                            </ul>
+                        </div>
+
+                        <div class="col-6 col-sm-5">
+                            <ul>
+                                <li class="text_grey">Posto</li>
+                                <li class="fw-bold fw_14">Carrozza 6 | Posto 2</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-3">
+                    <div class="row">
+                        <div class="col-6 col-md-12">
+                            <ul>
+                                <li class="text_grey">Prezzo</li>
+                                <li class="fw-bold">39.50 euro</li>
+                            </ul>
+                        </div>
+
+                        <div class="col-6 col-md-12">
+                            <ul>
+                                <li class="text_grey">Dettaglio</li>
+                                <li class="fw_14">39.50 euro</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 fw-bold py-2">
+                    <span>LOGO</span>
+                    <span class="text-uppercase">Modifia orari e prezzi</span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container-fluid border-top border-bottom border-dark py-4">
+            <div class="row">
+                <div class="col-12">
+                    <div class="row justify-content-between">
+                        <div class="col-4">
+                            <input type="checkbox" name="" id="">
+                            <span>IMG</span>
+                            <a href="#" class="fw_12 text-dark">Richiedi fattura</a>
+                        </div>
+
+                        <div class="col-4 fw-bold text-end">
+                            <span>Totale</span>
+                            <span>39.50</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

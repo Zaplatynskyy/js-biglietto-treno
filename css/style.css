@@ -1,8 +1,45 @@
-h1 {
-    color: red;
+/* ******COMMONS****** */
+ul {
+    list-style: none;
 }
 
-#nota {
+.text_grey {
+    color: grey;
     font-size: 12px;
-    color: green;
+}
+
+.fw_12 {
+    font-size: 12px;
+}
+
+.fw_14 {
+    font-size: 14px;
+}
+
+
+/* ******MAIN****** */
+#direction {
+    color: #ce9906;
+    background-color: black;
+}
+
+#direction i {
+    margin-right: 5px;
+    margin-left: 10px;
+}
+
+/* ******FOOTER****** */
+footer {
+    background-color: #e7e7e7;
+}
+
+/* *****DEBUG***** */
+.debug .my_container {
+    background-color: yellow;
+    margin: 20px auto;
+}
+
+.box {
+    height: 100px;
+    background-color: blue;
 }
