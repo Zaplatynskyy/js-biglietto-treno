@@ -23,6 +23,7 @@
     <main>
         <div class="container">
             <div class="row gy-2">
+                <!-- col indicazioni data andata e ritorno -->
                 <div class="col-12 col-md-3">
                     <ul>
                         <li id="direction" class="py-4">
@@ -39,16 +40,19 @@
                     </ul>
                 </div>
 
+                <!-- col dettagli biglietto treno -->
                 <div class="col-12 col-md-6">
+                    <!-- row itinerario -->
                     <div class="row">
                         <div class="col-12">
                             <ul>
-                                <li class="text_grey">Itinerario</li>
-                                <li class="fw-bold fw_14">Milano Centrale - Roma Termini</li>
+                                <li class="text_grey">Chilometri di percorrenza</li>
+                                <li id="chilometri" class="fw-bold fw_14"></li>
                             </ul>
                         </div>
                     </div>
 
+                    <!-- row tipo di biglietto -->
                     <div class="row">
                         <div class="col-4 col-sm-3 col-md-4">
                             <ul>
@@ -72,6 +76,7 @@
                         </div>
                     </div>
 
+                    <!-- row dettagli passeggero -->
                     <div class="row">
                         <div class="col-6 col-sm-5">
                             <ul>
@@ -89,7 +94,8 @@
                     </div>
                 </div>
 
-                <div class="col-12 col-md-3">
+                <!-- col prezzo del biglietto -->
+                <div class="col-12 col-md-3 border-start border-dark">
                     <div class="row">
                         <div class="col-6 col-md-12">
                             <ul>
@@ -107,7 +113,8 @@
                     </div>
                 </div>
 
-                <div class="col-12 fw-bold py-2">
+                <!-- col modifica biglietto -->
+                <div class="col-12 offset-md-3 col-md-6 fw-bold py-2">
                     <span>LOGO</span>
                     <span class="text-uppercase">Modifia orari e prezzi</span>
                 </div>
@@ -120,15 +127,17 @@
             <div class="row">
                 <div class="col-12">
                     <div class="row justify-content-between">
+                        <!-- col fatturazione -->
                         <div class="col-4">
                             <input type="checkbox" name="" id="">
                             <span>IMG</span>
                             <a href="#" class="fw_12 text-dark">Richiedi fattura</a>
                         </div>
 
+                        <!-- col prezzo totale -->
                         <div class="col-4 fw-bold text-end">
                             <span>Totale</span>
-                            <span>39.50</span>
+                            <span id="prezzo_biglietto"></span>
                         </div>
                     </div>
                 </div>
