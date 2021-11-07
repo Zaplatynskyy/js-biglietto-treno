@@ -40,6 +40,14 @@ ul {
     filter: invert(1);
 }
 
+main a {
+    text-decoration: none;
+}
+
+main a:hover {
+    text-decoration: underline;
+}
+
 /* ******FOOTER****** */
 footer {
     background-color: #e7e7e7;
@@ -47,6 +55,10 @@ footer {
 
 input[type="checkbox"] {
     width: 12px;
+}
+
+footer a:hover {
+    text-decoration: none;
 }
 
 /* *****DEBUG***** */
