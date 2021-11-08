@@ -32,6 +32,7 @@ Math.floor(Math.random() * 28) + 1;
 
 // condizionale prezzo variabile in base all'età
 if (eta < 18){
+    document.getElementById('sconto').innerHTML = 'sconto ' + (prezzoBiglietto * 20 / 100).toFixed(2) + ' €';
     // variazione prezzo scontato al 20%
     prezzoBiglietto = prezzoBiglietto - (prezzoBiglietto * 20 / 100);
     prezzoBiglietto = parseFloat(prezzoBiglietto.toFixed(2));
@@ -40,9 +41,9 @@ if (eta < 18){
     document.getElementById('prezzo_totale').innerHTML = prezzoBiglietto + ' €';
     document.getElementById('nota').innerHTML = 'under 18';
     document.getElementById('passeggero').innerHTML = '1 Ragazzo/a';
-    document.getElementById('sconto').innerHTML = 'sconto ' + (prezzoBiglietto * 20 / 100).toFixed(2) + ' €';
 
 } else if (eta > 65) {
+    document.getElementById('sconto').innerHTML = 'sconto ' + (prezzoBiglietto * 40 / 100).toFixed(2) + ' €';
     // variazione prezzo scontato al 40%
     prezzoBiglietto = prezzoBiglietto - (prezzoBiglietto * 40 / 100);
     prezzoBiglietto = parseFloat(prezzoBiglietto.toFixed(2));
@@ -51,7 +52,6 @@ if (eta < 18){
     document.getElementById('prezzo_totale').innerHTML = prezzoBiglietto + ' €';
     document.getElementById('nota').innerHTML = 'over 65';
     document.getElementById('passeggero').innerHTML = '1 Anziano';
-    document.getElementById('sconto').innerHTML = 'sconto ' + (prezzoBiglietto * 40 / 100).toFixed(2) + ' €';
     
 } else {
     // inserimento dati per tutti gli altri utenti non verificati nelle condizioni precedenti(eta compresa tra 18 e 65 anni)
