@@ -17,6 +17,10 @@ ul {
 }
 
 /* ******MAIN****** */
+main {
+    padding-right: 40px;
+}
+
 #direction {
     color: #ce9906;
     background-color: black;

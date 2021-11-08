@@ -1,12 +1,15 @@
 // dichiarazione dati inseriti dall'utente tramite prompt
-let chilometri = parseFloat(prompt('Inserisci i chilometri da percorrere'));
-let eta = parseInt(prompt('Inserisci la tua età'));
+let chilometri = prompt('Inserisci i chilometri da percorrere');
+let eta = prompt('Inserisci la tua età');
 
 // condizionale di verifica inserimento dati, in caso di dati errati il programma si blocca tramite un console.log di una variabile non dichiarata
 if (isNaN(chilometri) || isNaN(eta)) {
     alert('Attenzione, hai inserito dei valori non validi. Ricarica e reinserisci i tuoi dati.');
     console.log(bloccoProgramma);
 }
+
+chilometri = parseFloat(chilometri);
+eta = parseInt(eta);
 
 // dichiarazione e calcolo prezzo biglietto in base ai dati inseriti dall'utente
 let prezzoBiglietto = chilometri * 0.21;
