@@ -61,13 +61,3 @@ footer a:hover {
     text-decoration: none;
 }
 
-/* *****DEBUG***** */
-.debug .my_container {
-    background-color: yellow;
-    margin: 20px auto;
-}
-
-.box {
-    height: 100px;
-    background-color: blue;
-}
